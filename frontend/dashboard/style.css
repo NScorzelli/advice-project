@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgc-primary: #fff;
+  --fc-primary: #fff;
+  --fc-secondary: #0D1B30;
+  --btc-primary: #C5E7F8;
+  --btc-secondary: #6ba7c5;
+  --ff-primary: 'Staatliches', sans-serif;
+  --ff-secondary: 'Oswald', sans-serif;
+  --fs-bigger: 3.6rem;
+  --fs-medium:2.0rem;
+  --fs-small:1.6rem;
+  font-size: 62.5%;
+}
+
+html {
+  overflow: hidden;
+}
+
+body #video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+body {
+  padding: 4.2rem 3.5rem 12.0rem;
+}
+
+body .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.3rem;
+  max-width: 39.0rem;
+  margin: 0 auto;
+}
+
+body h1 {
+  font-family: var(--ff-primary);
+  color: var(--fc-primary);
+  font-size: var(--fs-bigger);
+  font-weight: 400;
+  max-width: 13.4rem;
+  line-height: 3.0rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+main {
+  background: var(--bgc-primary);
+  min-height: 39.0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 1px 6px 5px 1px #002649;
+}
+
+main input {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-small);
+  font-weight: 400;
+  color: var(--fc-secondary);
+  letter-spacing: 1px;
+  background-color: var(--btc-primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+main input:focus {
+  outline: 2px solid #93d9ff  
+}
+
+main input:hover {
+  background-color: var(--btc-secondary);
+}
